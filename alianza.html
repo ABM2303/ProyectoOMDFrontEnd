@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Icono de la pestaña -->
+  <link rel="shortcut icon" type="image/x-icon" href="iconos/icono2.png">
+  <!-- Iconos de Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <title>OMD - Alianzas</title>
+  <!-- Materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/carruselCSS.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide-core.min.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    crossorigin="anonymous">
+
+<style>
+  body {
+    place-items: center;
+    height: 100vh;
+}
+
+</style>
+
+</head>
+
+<body>
+  <!-- Navegacion -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img class="container-image" src="iconos/Logo.png" alt="..">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link nav-a" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-a" href="quienessomos.html">¿Quienes somos?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-a" href="afiliacion.html">Afiliación</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-a" href="alianza.html">Alianzas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-a" href="eventos.html">Eventos</a>
+          </li>
+          <li class="nav-item botonses">
+            <!-- Enlace a la pagina de inicio de sesion -->
+            <a class="nav-link nav-a botonses" aria-current="page" href="login.html">Iniciar sesión</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<div>
+  <h1 class="alianzastxt">Alianzas</h1>
+</div>
+
+<div class="slpider_wrapper">
+  <!-- carrusel estructura -->
+  <div class="splide">
+    <!-- lista de img para carrusel -->
+    <div class="splide__track">
+      <div class="splide__list">
+
+
+        <!-- para carrusel se utilizan 2 div  -->
+        <!-- splide__slide///img_box -->
+
+        <!-- splide para agregar el elemento  -->
+        <div class="splide__slide">
+          <!-- img para contenedor de imagen -->
+          <div class="img_box">
+            <!-- agregamos la imagen -->
+            <img src="imgCarrusel/aztecavo.png" alt="">
+          </div>
+        </div>
+        <!-- fin de la estructura -->
+
+        <div class="splide__slide">
+          <div class="img_box">
+            <img src="imgCarrusel/GlobalFrut.jpeg" alt="">
+          </div>
+        </div>
+
+        <div class="splide__slide">
+          <div class="img_box">
+            <img src="imgCarrusel/goc.jpeg" alt="">
+          </div>
+        </div>
+
+        <div class="splide__slide">
+          <div class="img_box">
+            <img src="imgCarrusel/MultiTV.jpeg" alt="">
+          </div>
+        </div>
+
+        <div class="splide__slide">
+          <div class="img_box">
+            <img src="imgCarrusel/5k.jpeg" alt="">
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+  
+    <!-- scrip para obentener recuros de splidejs.com -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
+      integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw=" crossorigin="anonymous">
+      </script>
+
+    <!-- script para funcinamiento del carrusel -->
+    <script>
+      //creamos una instancia donde asignamos la variable 'splide'
+      var splide = new Splide('.splide', {
+        perPage: 4, //establecemos la cantidad de paginas a mostrar
+        gap: '2rem', //espacio entre elementos del carrusel 
+        perMove: 1,//movemos un espacio en elementos
+        gap: '1.5rem',//distancia de movimiento 
+        padding:  '3rem',
+        type: 'loop',//Main type de carrusel 
+
+        drag: 'free',
+        sanp : true,
+        arrows: false, //flechas a los extremos centros del carrusel
+        pagination: false, //elemento visual que aparece en la zone inferior en el centro
+        autoplay: true,
+autoplayInterval: 50, //intervalo de autoplay
+
+        //puntos de interrupción para cambiar la cantidad de imagenes que se muestran
+        breakpoints: {
+          640: {
+            perPage: 2,
+            gap: '1rem',
+
+          },
+          731: {
+            perPage: 3,
+            gap: '.7rem',
+
+          },
+          480: {
+            perPage: 1,
+            gap: '0.7rem',
+
+          },
+        },
+      });
+      //termina de configurar la instancia y monta el elemento 
+      //seleccionado por el serlector '.splide'
+      splide.mount();
+    </script>
+
+  </div>
+  <!-- fin estructura carrusel -->
+</div>
+</body>
+
+</div>
+
+
+
+
+<!-- Pie de pagina -->
+<footer class="pie-pagina">
+  <div class="grupo-1">
+
+
+    <!-- Mapa de ubicacion de google maps -->
+    <div class="box">
+      <h2>ESTAMOS UBICADOS EN:</h2>
+      <article class="grupo mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10341.451315947032!2d-102.05079957619714!3d19.395478819972986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842de28c79759ee9%3A0xb93264047feeba30!2sC.%20Estocolmo%20522%2C%20Aguacates%2C%2060170%20Uruapan%2C%20Mich.!5e0!3m2!1ses-419!2smx!4v1681318729663!5m2!1ses-419!2smx"
+          width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- <p>Calle Estocolmo 522 <br>
+                Uruapan, Michoacán, Mexico</p> -->
+        <div class="box1">
+          <!-- <h2>SIGUENOS</h2> -->
+          <!-- Logos de redes sociales -->
+          <ul>
+            <li><a href="https://www.facebook.com/OMDMujeresMX"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="#"><i class="bi bi-whatsapp"></i></a></li>
+            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+
+          </ul>
+        </div>
+      </article>
+    </div>
+
+    <div class="box">
+      <figure>
+        <a href="#">
+          <!-- Logo de la OMD -->
+          <img src="img/WhiteLogo.png" alt="Logo de OMD">
+        </a>
+      </figure>
+      <p class="text-pie"><b><div class="texto"><div class="OMD">Organización</div> <div class="resto">para el fortalecimiento y empoderamiento de la mujer</div></div></b></p>
+    </div>
+  </div>
+  <div class="grupo-2">
+    <small>&copy; 2023 <b>OMD</b> - Todos los Derechos Reservados.</small>
+  </div>
+  <!-- JS para los logos de las redes sociales -->
+  <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+</footer>
+
+
+</body>
+
+</html>

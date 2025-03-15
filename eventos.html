@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icono de la pestaña -->
+    <link rel="shortcut icon" type="image/x-icon" href="iconos/icono2.png">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>OMD - Eventos</title>
+    <!-- Materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Estilo de la pagina -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Estilo de proporcionado por bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <!-- Estilo para el calendario -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navegacion -->
+    <nav  class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+              <img class="container-image" src="iconos/Logo.png" alt=".." >
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link nav-a" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-a" href="quienessomos.html">¿Quienes somos?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-a" href="afiliacion.html">Afiliación</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-a" href="alianza.html">Alianzas</a>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link nav-a" href="eventos.html">Eventos</a>
+              </li>
+              <li class="nav-item botonses">
+                <!-- Enlace a la pagina de inicio de sesion -->
+                <a class="nav-link nav-a botonses" aria-current="page" href="login.html">Iniciar sesión</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <h1 style="text-align: center;"">Eventos</h1>
+      <!-- Calendario  que usa CSS y JS-->
+      <div class="dos">
+      <div class="calendar">
+        <div class="calendar__info">
+            <div class="calendar__prev" id="prev-month">&#9664;</div>
+            <div class="calendar__month" id="month"></div>
+            <div class="calendar__year" id="year"></div>
+            <div class="calendar__next" id="next-month">&#9654;</div>
+        </div>
+        <!-- Dias de la semana -->
+        <div class="calendar__week">
+            <div class="calendar__day calendar__item">Lun</div>
+            <div class="calendar__day calendar__item">Mar</div>
+            <div class="calendar__day calendar__item">Mié</div>
+            <div class="calendar__day calendar__item">Jue</div>
+            <div class="calendar__day calendar__item">Vie</div>
+            <div class="calendar__day calendar__item">Sab</div>
+            <div class="calendar__day calendar__item">Dom</div>
+        </div>
+    
+        <div class="calendar__dates" id="dates"></div>
+    </div>
+    <!-- Funcionamiento del calendario en codigo JS -->
+    <script src="js/scripts.js"></script>
+
+    <!-- Lista de Eventos -->
+    <div class="list-group w-auto" id="events">
+      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+        <!-- Icono -->
+        <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+        <div class="d-flex gap-2 w-100 justify-content-between">
+          <div>
+            <!-- Titulo del evento -->
+            <h6 class="mb-0">Evento 1</h6>
+            <!-- Descripcion -->
+            <p class="mb-0 opacity-75">Some placeholder content in a paragraph.</p>
+          </div>
+          <!-- Cuanto falta para el evento -->
+          <small class="opacity-50 text-nowrap">now</small>
+        </div>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+        <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+        <div class="d-flex gap-2 w-100 justify-content-between">
+          <div>
+            <h6 class="mb-0">Another title here</h6>
+            <p class="mb-0 opacity-75">Some placeholder content in a paragraph that goes a little longer so it wraps to a new line.</p>
+          </div>
+          <small class="opacity-50 text-nowrap">3d</small>
+        </div>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+        <img src="https://github.com/twbs.png" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+        <div class="d-flex gap-2 w-100 justify-content-between">
+          <div>
+            <h6 class="mb-0">Third heading</h6>
+            <p class="mb-0 opacity-75">Some placeholder content in a paragraph.</p>
+          </div>
+          <small class="opacity-50 text-nowrap">1w</small>
+        </div>
+      </a>
+    </div>
+
+  </div>
+      
+      <p></p>
+      <p></p>
+      <!-- Pie de pagina -->
+      <footer class="pie-pagina">
+        <div class="grupo-1">
+
+          
+          <!-- Mapa de ubicacion de google maps -->
+          <div class="box">
+            <h2>ESTAMOS UBICADOS EN:</h2>
+            <article class="grupo mapa">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10341.451315947032!2d-102.05079957619714!3d19.395478819972986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842de28c79759ee9%3A0xb93264047feeba30!2sC.%20Estocolmo%20522%2C%20Aguacates%2C%2060170%20Uruapan%2C%20Mich.!5e0!3m2!1ses-419!2smx!4v1681318729663!5m2!1ses-419!2smx" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <!-- <p>Calle Estocolmo 522 <br>
+                Uruapan, Michoacán, Mexico</p> -->
+                <div class="box1">
+                  <!-- <h2>SIGUENOS</h2> -->
+                 <!-- Logos de redes sociales -->
+                  <ul>
+                    <li><a href="https://www.facebook.com/OMDMujeresMX"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="#"><i class="bi bi-whatsapp"></i></a></li>
+                    <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                    
+                  </ul>
+                </div>
+              </article>
+          </div>
+
+          <div class="box">
+            <figure>
+              <a href="#">
+                <!-- Logo de la OMD -->
+                <img  src="img/WhiteLogo.png" alt="Logo de OMD">
+              </a>
+            </figure>
+            <p class="text-pie"><b><div class="texto"><div class="OMD">Organización</div> <div class="resto">para el fortalecimiento y empoderamiento de la mujer</div></div></b></p>
+          </div>
+        </div>
+        <div class="grupo-2">
+          <small>&copy; 2023 <b>OMD</b> - Todos los Derechos Reservados.</small>
+        </div>
+        <!-- JS para los logos de las redes sociales -->
+        <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+      </footer>
+
+
+</body>
+</html>

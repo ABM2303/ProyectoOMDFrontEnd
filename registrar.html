@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icono de la pestaña -->
+    <link rel="shortcut icon" type="image/x-icon" href="iconos/icono2.png">
+    <link rel="stylesheet" href="css/loginCSS.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <script src="loginJS.js"></script> -->
+    <title>OMD - Registrarse</title>
+</head>
+<body>
+    <div class="overlay" >
+       <a href="index.html"><img class="logito" src="iconos/Logo.png" alt="logoOMD"></a>
+
+        <form name="Formulario" method="post" action="">
+          <!--   con = Container  for items in the form-->
+          <div class="con">
+            <!--     Start  header Content  -->
+            <header class="head-form">
+              <h2>Bienvenido</h2>
+              <!--     A welcome message or an explanation of the login form -->
+              <p>Ingrese sus datos para registrarse</p>
+            </header>
+            <!--     End  header Content  -->
+            <br>
+            <div class="field-set">
+      
+              <!--   user name -->
+              <span class="input-item">
+                <i class="fa fa-user-circle"></i>
+              </span>
+              <!--   user name Input-->
+              <input class="form-input" id="txt-input" name="nombre" type="text" placeholder="Nombre">
+      
+              <br>
+
+               <!--   user name -->
+              <span class="input-item">
+                <i class="fa fa-user-circle"></i>
+              </span>
+              <!--   user name Input-->
+              <input class="form-input" id="txt-input" name="correo" type="text" placeholder="Correo Electronico">
+      
+              <br>
+      
+              <span class="input-item">
+                <i class="fa fa-key"></i>
+              </span>
+              <input class="form-input" type="password" placeholder="Contraseña" id="pwd" name="contra">
+              <br>
+              <button class="regis" type="submit"> Registrar </button>
+          </div>
+        </form>
+        
+      </div>
+</body>
+</html>

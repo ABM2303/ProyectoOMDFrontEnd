@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/loginCSS.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Icono de la pestaña -->
+    <link rel="shortcut icon" type="image/x-icon" href="iconos/icono2.png">
+    <title>OMD -  Iniciar Sesión</title>
+</head>
+<body>
+    <div class="overlay" >
+       <a href="index.html"><img class="logito" src="iconos/Logo.png" alt="logoOMD"></a>
+
+        <form name="Formulario" method="post" action="">
+          <!--   con = Container  for items in the form-->
+          <div class="con">
+            <!--     Start  header Content  -->
+            <header class="head-form">
+              <h2>Bienvenido</h2>
+              <!--     A welcome message or an explanation of the login form -->
+              <p>Ingrese sus datos para iniciar sesión</p>
+            </header>
+            <!--     End  header Content  -->
+            <br>
+            <div class="field-set">
+      
+              <!--   user name -->
+              <span class="input-item">
+                <i class="fa fa-user-circle"></i>
+              </span>
+              <!--   user name Input-->
+              <input class="form-input" id="txt-input" name="correo" type="text" placeholder="Correo Electronico">
+      
+              <br>
+      
+              <span class="input-item">
+                <i class="fa fa-key"></i>
+              </span>
+              <input class="form-input" type="password" placeholder="Contraseña" id="pwd" name="contra">
+              <br>
+              <div><button class="log-in" type="submit"> Acceder </button>
+              <a href="registrar.html" class="btnreg">Registrarse</a></div>
+            </div>
+          </div>
+        </form>
+        
+      </div>
+</body>
+</html>
